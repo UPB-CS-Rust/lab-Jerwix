@@ -4,8 +4,6 @@
 
 fn main() {
     let s0 = String::from("Hello");
-    
-    
 
     // Don't change the following line!
     println!("{} == `{}`", stringify!(s0), s0);
