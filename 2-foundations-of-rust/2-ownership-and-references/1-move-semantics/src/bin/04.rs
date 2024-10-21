@@ -3,20 +3,15 @@
 //! function.
 
 fn main() {
-    let s0 = String::new();
-
-    let mut s1 = create_string(s0);
-
-    println!("{} == `{}`", stringify!(s1), s1);
-
-    s1.push_str(" World!");
+    let s1 = create_string();
 
     println!("{} == `{}`", stringify!(s1), s1);
 }
 
 ///`create_string()` no longer takes `s: String` as argument
 fn create_string() -> String {
-    let mut s = s;
-
+    let mut s = String::new();
+    s.push_str("Hello");
+    s.push_str(" World!");
     s
 }
