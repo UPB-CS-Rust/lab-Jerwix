@@ -3,8 +3,9 @@
 //! function.
 
 fn main() {
-    let s1 = create_string();
-
+    let mut s1 = create_string();
+    
+    s1.push_str(" World!");
     println!("{} == `{}`", stringify!(s1), s1);
 }
 
@@ -12,6 +13,5 @@ fn main() {
 fn create_string() -> String {
     let mut s = String::new();
     s.push_str("Hello");
-    s.push_str(" World!");
     s
 }
